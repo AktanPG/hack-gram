@@ -35,5 +35,19 @@ app.post('/login', async(req, res) => {
     res.redirect('/protected');
 });
 
+app.get('/admin', async(req, res) => {
+    const {name, password} = req.query;
+
+    if(name === 'admin' && password === 'zxcvbnqwerty7777kdadmdbdid') {
+        
+        const users = await Users.find({});
+
+        res.render('admin', {users});
+
+    } else {
+        res.redirect('/');
+    }
+});
+
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log('__[ SERVER HAVE BEEN STARTING ]__'));
